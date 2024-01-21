@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+   <link rel="stylesheet" href="style.css">
+
+   <script src="https://kit.fontawesome.com/b22da78a2f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+     <!------------------ header section  ------------ -->
+       
+   <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="" class="logo" width="250px" height="120px">
+              <!-- 243 107 -->
+                <ul id="sidemenu"> 
+                    <!-- in href we added the name of id  -->
+                    <li> <a href="#header">Home</a> </li>
+                    <li> <a href="#about">About</a> </li>
+                    <li> <a href="#services">Services</a> </li>
+                    <li> <a href="#portfolio">Projects</a> </li>
+                    <li> <a href="#contact">Contact</a> </li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Frontend/ReactJs Developer</p>
+                <h1>Hi ,I'm <span>Neha</span><br>Kaithwas from India</h1>
+           </div>           
+        </div>
+    </div>
+
+       
+ 
+<!--   
+    <div class="header-text">
+        <p>Frontend/ReactJs Developer</p>
+        <h1>Hi ,I'm <span>Neha</span><br>Kaithwas from India</h1>
+   </div>
+           -->
+      <!------------------ About  section  ------------ -->
+<div id="about">
+            <div class="container">
+
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png" alt="" >
+                    </div>
+                    <div class="about-col-2">
+
+                        <h1 class="sub-title">About Me</h1>
+                    <p>
+                        
+                        Hello, I'm Neha Kaithwas, a passionate frontend developer with a knack for creating engaging and intuitive user experiences. Armed with a keen eye for design and a love for clean code, I transform ideas into visually appealing and functional websites. Let's build something beautiful together.
+                    </p>
+                    
+                    <div class="tab-titles">
+                   
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+                    
+                    
+                    
+                    <div class="tab-contents active-tab" id="skills">
+
+                        <ul>
+                    
+                            <li><span>Core Technologies :</span> <br> C | C++ | Java | OOPs | Data Structure<br></li>
+                            <li><span>Web Technologies :</span> <br>HTML | CSS | Javascript | Bootstrap | ReactJs<br></li>
+                            <li><span>Database : </span><br>SQL<br></li>
+                            <li><span>Soft Skills :</span><br>Good Communication | Leadership | Problem Solving <br></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+
+                        <ul>
+                            <h3 class="intern">Internship</h3><br>
+                            <li><span>LEARN AND BUILD, Jaipur(Feb 2023 -April 2023) </span> <br><br> I had done an Internship from LEARN AND BUILD. Where I acquired technical skills and valuable knowledge along with gaining practical experience with teammates. I was able to apply the knowledge I had acquired in my coursework to actual projects, which helped me solidify my coding skills.<br></li>
+                            <li><span>TECHNOEDUTECH, Nashik(May 2023- June 2023) </span> <br><br>This Internship was a valuable stepping stone in my career. It not only enhanced my technical skills but also provided me with insights into the industry's demands and trends. One of the most beneficial aspects of the internship was the hands-on experience I gained in coding, debugging, and problem-solving.<br></li>
+                           
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+
+                       
+                        <ul>
+                       
+                       <li><span>JUNE (2020-2024)</span><br><br>Bachelor of Technology in Computer Science Engineering <br>8.45 CGPA<br></li>
+                       <li><span>JUNE (2019-2020)</span><br><br>Higher Secondary Education (12th) <br>79%<br></li>
+                       <li><span>JUNE (2017-2018)</span><br><br>High School (10th) <br>87%<br></li>
+
+                      </ul>
+                    </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!-- --------------- Services --------------------->
+  
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-webflow"></i>
+                
+                <h2>Web Design</h2> <br>
+                <p>I am frontend web developer ,I design
+                 and implement the user interface and user experience of a
+                  website or web application. I used to 
+                   writing code in languages such as HTML, CSS, JavaScript,
+                    Bootstrap and ReactJs to create visually appealing and interactive elements that users interact with directly.</p>
+             <a href="#">Learn More</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2><br>
+                <p>I am frontend developer for application also.
+          This involves designing and implementing the visual elements of the application that can users interact ,In this I utilize some programming languages
+    such as HTML, CSS, and JavaScript to build responsive and interactive interfaces</p>
+             <a href="#">Learn More</a>
+            </div>
+
+
+        </div>
+        
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+
+
+<!--  portfolio -->
+
+<div id="portfolio">
+
+    <div class="container">
+        <h1 class="sub-title">My projects</h1>
+
+        <div class="project-list">
+     
+            <div class="project">
+
+                <img src="images/work-1.png" alt="" width="450" height="400">
+
+                <div class="layer">
+                    <h3>Mini Project</h3>
+                    <p>These are some mini project which I  created while doing interenship for enhancing my skills . Such as Registration page, calculator ,forms etc. </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="project">
+               <img src="images/amazone_clone.jpg" alt="" width="450" height="400" >
+         <div class="layer">
+            <h3>Amozone clone</h3>
+            <p>Developed a replica of the Amazon e-commerce platform to enhance my frontend and backend development skills. The project involved creating a user-friendly interface with features such as product listings, search functionality and shopping cart </p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+         
+
+         </div>
+
+            </div>
+
+
+            <div class="project">
+
+                <img src="images/Shooping_app.jpg" alt="" width="450" height="400">
+              
+                <div class="layer">
+                    <h3>Online Shooping App</h3>
+                    <p>Developed a user-friendly online shopping application to gain practical experience in full-stack development. The project involved creating a seamless interface for users to browse products, add them to a cart, and complete transactions.  </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                </div>
+            
+                
+            
+            
+            </div>
+
+
+        </div>
+
+        <a href="#" class="btn">See More</a>
+
+    </div>
+
+</div>
+
+
+      <!-- Contact Section  -->
+
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>kaithwasneha720@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>8962096854</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/nkaithwas478/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/neha-kaithwas-6a3984227"><i class="fa-brands fa-linkedin"></i></a>
+                        <!-- <a href=""><i class="fa-brands fa-youtube"></i></a> -->
+                        <a href="https://github.com/Kaithwasneha"><i class="fa-brands fa-github"></i></a>
+                         <a href=""><i class="fa-solid fa-code"></i></a>
+                        
+                    </div>
+                  <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+
+                </div>
+
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                       <h1>For Connect with me </h1>
+         
+                        <input type="text" name="Name" placeholder="your Name" required>
+                        <input type="email" name="Email" placeholder="your email address" required>
+                        <textarea  name="Message" rows="6" placeholder="your Message" required></textarea> 
+                         
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+        </div>
+
+
+        
+    <!-- </div>
+    </div> -->
+    <div class="copyright">
+        <p>Copyright © Neha. Made<i class="fa-solid fa-heart"></i> by Neha kaithwas </p>
+    </div>
+    
+    
+
+</div>
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+ <!-- JAVA Script content -->
+
+ <script>
+            
+
+     var tablinks = document.getElementsByClassName("tab-links");
+     var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        } 
+
+        for(tabcontent of tabcontents){
+
+            tabcontent.classList.remove("active-tab");
+
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+//   java script for sidemenu
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+
+
+
+
+
+
+
+
+
+
+ </script>
+
+ <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyJ5R2fLY6CHwAc1-LagaSRTVH8_JtxmIxpm8D_WSxaVzWmwxl6CUk4kVZDMB9dUCtd/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg= document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>{
+      msg.innerHTML ="Your Message has sent successfully"
+      setTimeout(function(){
+        msg.innerHTML=""
+      },5000)
+     form.reset()
+    })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
